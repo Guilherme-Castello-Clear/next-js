@@ -1,3 +1,5 @@
+import Layout from "../components/Layout"
+
 export default function Jsx(){
 
     const titulo = <h1>JSX é um conceito central</h1>
@@ -9,12 +11,14 @@ export default function Jsx(){
     const obj = {nome: 'Gui', idd: 19}
 
     return(
-        <div>
-            {titulo}
-            {subtitulo()}
-            <p>
-                {JSON.stringify(obj)}
-            </p>
-        </div>
+        <Layout titulo='Entendendo o JSX'>
+            <div>
+                {titulo}
+                {subtitulo()}
+                <p>
+                    {JSON.stringify(obj)}
+                </p>
+            </div>
+        </Layout>
     )
 }
